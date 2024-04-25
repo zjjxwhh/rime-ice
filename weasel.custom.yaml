@@ -1,0 +1,66 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Thu Apr 25 17:07:45 2024"
+  rime_version: 1.8.5
+patch:
+  style/color_scheme: google
+  style/comment_font_point: 11
+  style/font_point: 13
+  style/label_font_point: 10
+  style/layout:
+    baseline: 0                            # 0 - 100，字号百分比。<https://github.com/rime/weasel/pull/1177>
+    linespacing: 0                         # 0 - 100，字号百分比。与 baseline 一同设置可解决字体跳动问题，设置为 0 为禁用
+    align_type: bottom                     # 标签、候选文字、注解文字之间的相对对齐方式：top ; center ; bottom
+    max_height: 600                        # 候选框最大高度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
+    max_width: 0                           # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
+    min_height: 0                          # 候选框最小高度
+    min_width: 10                          # 候选框最小宽度
+    border_width: 2                        # 边框宽度；又名 border
+    margin_x: 20                           # 主体元素和候选框的左右边距；为负值时，不显示候选框
+    margin_y: 12                           # 主体元素的上下边距；为负值时，不显示候选框
+    spacing: 13                            # inline_preedit 为否时，编码区域和候选区域的间距
+    candidate_spacing: 30                  # 候选项之间的间距
+    hilite_spacing: 10                     # 候选项和相应标签的间距
+    hilite_padding: 4                      # 高亮区域和内部文字的间距，影响高亮区域大小
+    hilite_padding_x: 12                   # 高亮区域和内部文字的左右间距，如无特殊指定则依 hilite_padding 设置
+    # hilite_padding_y: 8                  # 高亮区域和内部文字的上下间距，如无特殊指定则依 hilite_padding 设置
+    shadow_radius: 0                       # 阴影区域半径，为 0 不显示阴影；需要同时在配色方案中指定非透明的阴影颜色
+    shadow_offset_x: 4                     # 阴影左右偏移距离
+    shadow_offset_y: 4                     # 阴影上下偏移距离
+    corner_radius: 10                      # 候选窗口圆角半径
+    round_corner: 7                        # 候选背景色块圆角半径，又名 hilited_corner_radius
+  preset_color_schemes/+:
+    windows11:
+      name: "微软／Windows 11"                 # 方案设置中显示的配色名称
+      author: Hervey                           # 配色作者名称
+      color_format: rgba                       # 颜色格式：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr 默认）
+      # 默认配色
+      text_color: 0x000000                     # 文字
+      shadow_color: 0x000000b4                 # 阴影
+      label_color: 0x646464                    # 标签
+      comment_text_color: 0xD08770             # 注释
+      border_color: 0xE8E8E8                   # 边框
+      back_color: 0xF9F9F9                     # 背景
+      # 普通候选项配色
+      candidate_back_color: 0xF9F9F9           # 背景
+      candidate_border_color: 0xF9F9F9         # 边框
+      # candidate_shadow_color:                # 阴影
+      candidate_text_color: 0x000000           # 文字
+      # 编码区域配色
+      hilited_text_color: 0x000000             # 文字
+      hilited_back_color: 0xEBCB8B             # 背景
+      # hilited_shadow_color:                  # 阴影
+      # 选中的候选区域配色
+      hilited_mark_color: 0x646464             # 标签前的标记
+      hilited_label_color: 0x4C566A            # 标签
+      hilited_comment_text_color: 0x646464     # 注释
+      hilited_candidate_text_color: 0x000000   # 文字
+      hilited_candidate_border_color: 0xF0F0F0 # 边框
+      hilited_candidate_back_color: 0xF0F0F0   # 背景
+      # hilited_candidate_shadow_color:        # 阴影
+      # inline_preedit: false 时翻页箭头颜色，不设置则不显示箭头
+      # nextpage_color: 0x000000               # 下一页
+      # prevpage_color: 0x000000               # 上一页
+      
